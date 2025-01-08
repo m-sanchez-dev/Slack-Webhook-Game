@@ -1,0 +1,20 @@
+{
+  "name": "standup-games",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "tunel": "ngrok http http://localhost:3000",
+    "start-with-tunel": "concurrently \"npm run start\" \"npm run tunel\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "concurrently": "^7.0.0"
+  }
+}
