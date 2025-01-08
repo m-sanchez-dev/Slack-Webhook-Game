@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "tunel": "ngrok http http://localhost:3000",
-    "start-with-tunel": "concurrently \"npm run start\" \"npm run tunel\""
+    "start-with-tunel": "concurrently \"npm run start\" \"npm run tunel\"",
+    "update": "bash ./updateManifest.sh"
   },
   "keywords": [],
   "author": "",
