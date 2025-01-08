@@ -11,16 +11,32 @@ This is a simple Node.js server that handles Slack Slash Commands to play games 
 ## Installation
 
 1. Clone the repository:
+
    ```sh
    git clone <repository-url>
    ```
+
 2. Navigate to the project directory:
+
    ```sh
    cd standup-games
    ```
+
 3. Install the dependencies:
+
    ```sh
    npm install
+   ```
+
+4. Set up environment variables:
+   - Copy the `.env_template` file to `.env`:
+   ```sh
+   cp .env_template .env
+   ```
+   - Open the `.env` file and add your Slack app ID and API token:
+   ```plaintext
+   SLACK_APP_ID=your-slack-app-id
+   SLACK_API_TOKEN=xoxb-your-slack-api-token
    ```
 
 ## Installing Ngrok on macOS
