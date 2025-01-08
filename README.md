@@ -6,6 +6,7 @@ This is a simple Node.js server that handles Slack Slash Commands to play games 
 
 - Node.js
 - npm
+- Ngrok
 
 ## Installation
 
@@ -26,9 +27,23 @@ This is a simple Node.js server that handles Slack Slash Commands to play games 
 
 1. Start the server:
    ```sh
-   node server.js
+   npm run start
    ```
-2. Configure your Slack workspace to use the server for Slash Commands:
+2. Start Ngrok to tunnel your local server:
+   ```sh
+   npm run tunel
+   ```
+3. Alternatively, you can start both the server and Ngrok concurrently:
+   ```sh
+   npm run start-with-tunel
+   ```
+4. Update the Slack app manifest with the new Ngrok URL:
+
+   ```sh
+   npm run update
+   ```
+
+5. Configure your Slack workspace to use the server for Slash Commands:
    - `/roll` to roll a dice.
    - `/draw` to draw a card.
 
