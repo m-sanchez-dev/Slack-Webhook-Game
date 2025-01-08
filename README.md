@@ -23,6 +23,14 @@ This is a simple Node.js server that handles Slack Slash Commands to play games 
    npm install
    ```
 
+## Installing Ngrok on macOS
+
+To install Ngrok on macOS, use Homebrew:
+
+```sh
+brew install ngrok
+```
+
 ## Usage
 
 1. Start the server:
