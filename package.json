@@ -5,9 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "tunel": "ngrok http http://localhost:3000",
-    "start-with-tunel": "concurrently \"npm run start\" \"npm run tunel\"",
-    "update": "bash ./updateManifest.sh"
+    "tunel": "ngrok http http://localhost:3000 --url=noble-starling-formerly.ngrok-free.app",
+    "start-with-tunel": "concurrently \"npm run start\" \"npm run tunel\""
   },
   "keywords": [],
   "author": "",
